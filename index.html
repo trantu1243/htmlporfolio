@@ -7,6 +7,7 @@
     <title>Merry Christmas</title>
 </head>
 <body>
+    
     <main>
         <img src="./christmas-landscape-background-of-full-moon-and-mountains-vector.jpg" alt="" class="mountain" />
         <img src="./penguin.png" alt="penguin" class="penguin"/>
@@ -68,6 +69,7 @@
       </div>
       
       <script>
+        
         const snowContainer = document.getElementById("snow-container");
         const snowContent = ['&#10052', '&#10053', '&#10054']
 
@@ -106,13 +108,20 @@
         }
 
         window.addEventListener("load", () => {
-            createSnow(70)
-            setTimeout(removeSnow, (1000 * 1000))
+            
+            createSnow(70);
+            setTimeout(removeSnow, (1000 * 1000));
+            
         });
+        
+        function playAudioOnce() {
+        const audio = new Audio("./ChangGiongGiangSinh-LuWillisticdatfitzx-7206785.mp3");
+            audio.play();
+            window.removeEventListener("click", playAudioOnce);
+        }
 
-        // window.addEventListener("click", () => {
-        // removeSnow()
-        // });
+        
+        window.addEventListener("click", playAudioOnce);
         var boxgift = document.querySelector('.box-gift')
         var Close = document.querySelector('.fa-xmark')
         var boxContent = document.querySelector('.box-content')
@@ -123,10 +132,12 @@
             // boxContent.classList.add('active')
         }
         content.onclick = function(){
-            boxContent.classList.add('active')
+            boxContent.classList.add('active');
+            
         }
         Close.onclick = function(){
-            boxContent.classList.remove('active')
+            boxContent.classList.remove('active');
+            
         }
       </script>
 </body>
