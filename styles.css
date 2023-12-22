@@ -1,4 +1,10 @@
 
+@font-face {
+    font-family: "boris"; /* Đặt tên cho font của bạn */
+    src: url('./Boris.otf') format('otf'); /* Đường dẫn đến tệp font và định dạng */
+    
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,8 +33,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Pacifico", cursive;
-    
+    /* font-family: "Pacifico", cursive; */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
     
     text-align: center;
 }
@@ -101,9 +108,9 @@ footer .heart {
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -117,6 +124,7 @@ body{
     background-image: url('image/bgr2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "YourFontName";
 }
 .container{
     position: relative;
@@ -796,11 +804,13 @@ section{
 }
 .fa-xmark{
     position: absolute;
-    right: 5%;
-    top: 5%;
+    right: 10%;
+    top: 10%;
     font-size: 40px;
     color: #fff;
     cursor: pointer;
+    /* width: 50px;
+    height: 50px; */
 }
 .fa-xmark:hover{
     filter: drop-shadow(0 0 10px #fff);
@@ -835,9 +845,9 @@ section{
     margin-bottom: 20px;
 }
 .content-text p{
-    font-size: 30px;
+    font-size: 35px;
     transform: translateY(-40px);
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
     font-weight: bold;
 }
 .box-content:hover #text1{
@@ -863,9 +873,9 @@ section{
 }
 .text2 h2:nth-child(1){
     padding: 5px 5px 0px 5px;
-    font-size: 22px;
+    font-size: 26px;
     transform: translateX(-500px);
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
 }
 .box-content:hover #text2{
     animation: contenttext1 2s ease-in forwards;
@@ -883,7 +893,7 @@ section{
     padding: 0px 5px 0px 5px;
     font-size: 22px;
     transform: translateX(500px);
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
 }
 .box-content:hover #text3{
     animation: contenttext2 2s ease-in forwards;
@@ -1008,6 +1018,6 @@ marquee{
     color: #fff;
     font-size: 18px;
     padding: 5px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     background: rgba(0, 0, 0, 0.3);
 }
